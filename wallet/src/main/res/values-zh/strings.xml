@@ -5,7 +5,9 @@
     <string name="action_copy">复制</string>
     <string name="action_edit_label">编辑标签</string>
     <string name="action_empty_wallet">空钱包</string>
+	<string name="action_sweep_wallet">Sweep wallet</string>
     <string name="action_settings">设置</string>
+	<string name="action_support">Contact support</string>
     <string name="action_about">关于</string>
     <string name="action_refresh">刷新</string>
     <string name="action_sign_verify_message">签署/验证消息</string>
@@ -18,6 +20,7 @@
     <!-- Errors -->
     <string name="error_generic">执行指令时出错</string>
     <string name="error_could_not_read_wallet">无法读取钱包</string>
+	<string name="error_camera">Could not access the device camera</string>
     <!-- Generic items -->
     <string name="button_ok">OK</string>
     <string name="button_next">下一个</string>
@@ -25,6 +28,7 @@
     <string name="button_return">返回</string>
     <string name="button_confirm">确认</string>
     <string name="button_cancel">取消</string>
+	<string name="button_default">Default</string>
     <string name="button_dismiss">取消</string>
     <string name="button_delete">删除</string>
     <string name="button_add">添加</string>
@@ -40,6 +44,9 @@
     <string name="button_agree">同意</string>
     <string name="button_disagree">否定</string>
     <string name="button_add_coins">+币</string>
+	<string name="button_execute">Execute</string>
+	<string name="yes">Yes</string>
+    <string name="no">No</string>
     <string name="scan_qr_code">扫描二维码</string>
     <string name="erase_address">擦除地址</string>
     <string name="copied_to_clipboard">复制到剪贴板</string>
@@ -47,6 +54,7 @@
     <string name="wallet_title_balance">余额</string>
     <string name="wallet_title_send">发送</string>
     <string name="wallet_locked_message">钱包已加密</string>
+	<string name="wallet_is_not_locked_message">Your wallet is not locked</string>
     <string name="unlock_wallet_title">解密钱包</string>
     <string name="unlocking_wallet_working">解密钱包&#8230;</string>
     <string name="unlocking_wallet_error_title">无法解密钱包</string>
@@ -68,6 +76,9 @@
     <string name="restore_wallet">恢复钱包</string>
     <string name="test_wallet">测试钱包</string>
     <!-- Intro -->
+    <string name="override_wallet_warning_title">Override existing wallet?</string>
+    <string name="override_new_wallet_warning_message">If you create a new wallet, your existing wallet will be lost unless you backed up you <i>recovery phrase</i>.</string>
+    <string name="override_restore_wallet_warning_message">If you restore a wallet, your existing wallet will be lost unless you backed up you <i>recovery phrase</i>.</string>
     <string name="incompatible_device_warning_title">设备不匹配</string>
     <string name="incompatible_device_warning_message">由于软件或硬件原因，此设备无法执行某些加密功能。\n可以通过设备生产商发布的更新来解决。\n\n如果有任何疑问，欢迎和我们联系：support@coinomi.com</string>
     <!-- Recovery fragment -->
@@ -100,6 +111,7 @@
     <string name="history_empty">目前未收到币！\n\n可以从交易所购买，或出售商品、服务或出售劳务。</string>
     <string name="sent_to">发送至</string>
     <string name="received_with">接收</string>
+	<string name="received_from">received from</string>
     <string name="get_tx_info_error">无法获取交易信息</string>
     <string name="disconnected_label">无法联网</string>
     <string name="no_wallet_pocket_selected">尚未选择钱包帐号</string>
@@ -137,6 +149,7 @@
     <string name="amount_warn_fees_apply">因手续费实际发送的数量会稍微少一些。</string>
     <!-- Set Password fragment -->
     <string name="set_password_info">设置密码保护你的钱包。</string>
+	<string name="set_bip39_passphrase">Type your BIP39 passphrase</string>
     <string name="set_password1">输入密码</string>
     <string name="set_password2">再次输入密码</string>
     <string name="password_too_common_error">密码\"%1$s\" 太常见，不安全。</string>
@@ -221,6 +234,12 @@
     <string name="edit_address_book_entry_dialog_title_edit">编辑地址</string>
     <string name="edit_address_book_entry_dialog_address_label">地址</string>
     <string name="edit_address_book_entry_dialog_label_label">名称</string>
+    <!-- Edit Account -->
+    <string name="edit_account_title">Edit account</string>
+    <string name="edit_account_description_label">Description</string>
+    <!-- %1$s is the name of the account e.g. Remove account Bitcoin? -->
+    <string name="edit_account_delete_title">Remove account %1$s?</string>
+    <string name="edit_account_delete_description">This removes the account from the wallet but it is still possible to re-add it and recover the coins.</string>
     <!-- Settings -->
     <string name="title_activity_settings">设置</string>
     <string name="pref_title_restore_wallet">恢复钱包</string>
@@ -235,6 +254,13 @@
     <string name="seed_password_protected">恢复密码有加密保护 (BIP39)</string>
     <!-- Wallet locked -->
     <string name="touch_to_decrypt_wallet">触摸解锁</string>
+    <!-- Debugging -->
+    <string name="title_activity_debugging">Debugging</string>
+    <string name="debugging_info">You can use a collection of tools to debug various issues with your wallet.</string>
+    <string name="debugging_test_wallet_password">Wallet unlocking tests</string>
+    <string name="debugging_test_wallet_password_results">Unlocked wallet: %1$s\n\nFingerprints\nInput: %2$s\nKey: %3$s</string>
+    <!-- Overview -->
+    <string name="title_activity_overview">Overview</string>
     <!-- Exchange -->
     <string name="title_activity_trade">兑换</string>
     <string name="trade_info">选择要兑换的币种。\n换到的币将自动添加到你的钱包。</string>
@@ -305,4 +331,36 @@
     <string name="account_private_key_label">私钥</string>
     <string name="account_extended_private_key_label">延展私钥</string>
     <string name="account_private_key_warning">私钥可以让你从此帐户中发送资金。没有必要备份这个私钥，因为其可以通过  <i>恢复钱包密码</i> 重新生成。</string>
+		    <!-- Support -->
+    <string name="support_message">Contact Coinomi support</string>
+    <!-- Sweep wallet -->
+    <!-- Sweep paper wallet means to redeem coins from a code usually printed on a paper -->
+    <string name="title_activity_sweep_wallet">Sweep paper wallet</string>
+    <string name="sweep_wallet_info">You are about to transfer coins from a paper wallet to your Coinomi wallet.\nAfter the transfer is complete, please avoid reusing the paper wallet for security reasons.\n\nSupported formats: WIF, BIP38, Mini private key.</string>
+    <string name="sweep_wallet_key_title">Private key</string>
+    <string name="sweep_wallet_key_password">Private key password</string>
+    <string name="sweep_wallet_key_hint">type or scan a private key</string>
+    <string name="sweep_wallet_bad_format">Could not recognize the private key format.</string>
+    <string name="sweep_wallet_bad_coin_type">The private key type does not match the destination account type.</string>
+    <string name="sweep_wallet_bad_password">Incorrect password.</string>
+    <string name="sweep_wallet_zero_coins">The private key does not contain any funds.</string>
+    <string name="sweep_wallet_key_wait">Please wait while sweeping your paper wallet</string>
+    <!-- &#8230; is the ... character -->
+    <string name="sweep_wallet_key_decoding">Decoding private key&#8230;</string>
+    <!-- &#8230; is the ... character -->
+    <string name="sweep_wallet_key_loading">Loading balance&#8230;</string>
+    <!-- &#8230; is the ... character -->
+    <string name="sweep_wallet_key_signing">Creating transaction&#8230;</string>
+    <!-- Fees settings -->
+    <string name="title_activity_transaction_fees">Transaction fees</string>
+    <!-- Example: Bitcoin transaction fees-->
+    <string name="tx_fees_title">%1$s transaction fees</string>
+    <!-- Example: The fee value is per kilobyte.-->
+    <string name="tx_fees_description">The fee value is %1$s.</string>
+    <string name="tx_fees_per_kilobyte">per kilobyte of transaction data</string>
+    <string name="tx_fees_per_byte">per byte of transaction data</string>
+    <string name="tx_fees_per_transaction">per transaction</string>
+
+    <!-- Terms -->
+    <string name="terms_of_service_title">Terms of service</string>
 </resources>

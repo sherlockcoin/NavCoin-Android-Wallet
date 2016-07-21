@@ -5,7 +5,9 @@
     <string name="action_copy">Copiar</string>
     <string name="action_edit_label">Editar etiqueta</string>
     <string name="action_empty_wallet">Vaciar billetera</string>
+	<string name="action_sweep_wallet">Sweep wallet</string>
     <string name="action_settings">Configuración</string>
+	<string name="action_support">Contact support</string>
     <string name="action_about">Sobre Coinomi</string>
     <string name="action_refresh">Renovar</string>
     <string name="action_sign_verify_message">Firmar / verificar mensaje</string>
@@ -18,6 +20,7 @@
     <!-- Errors -->
     <string name="error_generic">Un error ha ocurrido durante la ejecución de la acción</string>
     <string name="error_could_not_read_wallet">No ha podido leer la billetera</string>
+	<string name="error_camera">Could not access the device camera</string>
     <!-- Generic items -->
     <string name="button_ok">OK</string>
     <string name="button_next">Siguiente</string>
@@ -25,6 +28,7 @@
     <string name="button_return">Retornar</string>
     <string name="button_confirm">Confirmar</string>
     <string name="button_cancel">Cancelar</string>
+	<string name="button_default">Default</string>
     <string name="button_dismiss">Descartar</string>
     <string name="button_delete">Borrar</string>
     <string name="button_add">Agregar</string>
@@ -40,6 +44,9 @@
     <string name="button_agree">De acuerdo</string>
     <string name="button_disagree">No estoy de acuerdo</string>
     <string name="button_add_coins">Monedas</string>
+	<string name="button_execute">Execute</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
     <string name="scan_qr_code">Escanear código QR</string>
     <string name="erase_address">Borrar dirección</string>
     <string name="copied_to_clipboard">Copiado al portapapeles</string>
@@ -47,6 +54,7 @@
     <string name="wallet_title_balance">Balance</string>
     <string name="wallet_title_send">Enviar</string>
     <string name="wallet_locked_message">Su billetera esta bloqueada</string>
+	<string name="wallet_is_not_locked_message">Your wallet is not locked</string>
     <string name="unlock_wallet_title">Desbloquear billetera</string>
     <string name="unlocking_wallet_working">Desbloqueando su billetera &#8230;</string>
     <string name="unlocking_wallet_error_title">No ha podido desbloquear la billetera</string>
@@ -68,6 +76,9 @@
     <string name="restore_wallet">Recuperar una billetera</string>
     <string name="test_wallet">Probar Cartera</string>
     <!-- Intro -->
+	<string name="override_wallet_warning_title">Override existing wallet?</string>
+	<string name="override_new_wallet_warning_message">If you create a new wallet, your existing wallet will be lost unless you backed up you <i>recovery phrase</i>.</string>
+	<string name="override_restore_wallet_warning_message">If you restore a wallet, your existing wallet will be lost unless you backed up you <i>recovery phrase</i>.</string>
     <string name="incompatible_device_warning_title">Dispositivo incompatible</string>
     <string name="incompatible_device_warning_message">Este dispositivo no puede realizar ciertas funciones criptográficas debido a errores de software o hardware.\nEsto se podría solucionar con una actualización del fabricante del dispositivo.\n\nPóngase en contacto con nosotros si tiene alguna pregunta: support@coinomi.com</string>
     <!-- Recovery fragment -->
@@ -100,6 +111,7 @@
     <string name="history_empty">No hay monedas recibidas hasta la fecha!\n\nUsted puede conseguir algunas a través de un intercambio, de el comercio y la venta de bienes  y servicios</string>
     <string name="sent_to">Enviado a</string>
     <string name="received_with">Recibido con</string>
+	<string name="received_from">received from</string>
     <string name="get_tx_info_error">No se pudo obtener confirmación de la transacción</string>
     <string name="disconnected_label">Sin conexión</string>
     <string name="no_wallet_pocket_selected">No hay una cuenta de billetera seleccionada</string>
@@ -137,6 +149,7 @@
     <string name="amount_warn_fees_apply">Un poco menos se enviará por causa de las comisiones</string>
     <!-- Set Password fragment -->
     <string name="set_password_info">Establecer una contraseña para proteger su billetera durante el uso diario.</string>
+	<string name="set_bip39_passphrase">Type your BIP39 passphrase</string>
     <string name="set_password1">Escriba su contraseña</string>
     <string name="set_password2">Reescriba su contraseña</string>
     <string name="password_too_common_error">La contraseña \"%1$s\" es muy común para ser utilizada de forma segura.</string>
@@ -224,6 +237,12 @@
     <string name="edit_address_book_entry_dialog_title_edit">Editar dirección</string>
     <string name="edit_address_book_entry_dialog_address_label">Dirección</string>
     <string name="edit_address_book_entry_dialog_label_label">Nombre</string>
+	    <!-- Edit Account -->
+    <string name="edit_account_title">Edit account</string>
+    <string name="edit_account_description_label">Description</string>
+    <!-- %1$s is the name of the account e.g. Remove account Bitcoin? -->
+    <string name="edit_account_delete_title">Remove account %1$s?</string>
+    <string name="edit_account_delete_description">This removes the account from the wallet but it is still possible to re-add it and recover the coins.</string>
     <!-- Settings -->
     <string name="title_activity_settings">Configuración</string>
     <string name="pref_title_restore_wallet">Recuperar  billetera</string>
@@ -238,6 +257,13 @@
     <string name="seed_password_protected">Esta frase de recuperación está protegida (BIP39)</string>
     <!-- Wallet locked -->
     <string name="touch_to_decrypt_wallet">Toque para desbloquear</string>
+	    <!-- Debugging -->
+    <string name="title_activity_debugging">Debugging</string>
+    <string name="debugging_info">You can use a collection of tools to debug various issues with your wallet.</string>
+    <string name="debugging_test_wallet_password">Wallet unlocking tests</string>
+    <string name="debugging_test_wallet_password_results">Unlocked wallet: %1$s\n\nFingerprints\nInput: %2$s\nKey: %3$s</string>
+    <!-- Overview -->
+    <string name="title_activity_overview">Overview</string>
     <!-- Exchange -->
     <string name="title_activity_trade">Intercambio</string>
     <string name="trade_info">Seleccione las monedas que usted desea intercambiar.\nLas monedas convertidas se agregan automáticamente a su billetera.</string>
@@ -308,4 +334,36 @@
     <string name="account_private_key_label">llave privada</string>
     <string name="account_extended_private_key_label">llave privada extendida</string>
     <string name="account_private_key_warning">La llave privada le permite enviar las monedas desde esta cuenta. No es necesario realizar copias de seguridad de  esta llave , ya que se deriva de su <i>frase recuperación</i></string>
+	    <!-- Support -->
+    <string name="support_message">Contact Coinomi support</string>
+    <!-- Sweep wallet -->
+    <!-- Sweep paper wallet means to redeem coins from a code usually printed on a paper -->
+    <string name="title_activity_sweep_wallet">Sweep paper wallet</string>
+    <string name="sweep_wallet_info">You are about to transfer coins from a paper wallet to your Coinomi wallet.\nAfter the transfer is complete, please avoid reusing the paper wallet for security reasons.\n\nSupported formats: WIF, BIP38, Mini private key.</string>
+    <string name="sweep_wallet_key_title">Private key</string>
+    <string name="sweep_wallet_key_password">Private key password</string>
+    <string name="sweep_wallet_key_hint">type or scan a private key</string>
+    <string name="sweep_wallet_bad_format">Could not recognize the private key format.</string>
+    <string name="sweep_wallet_bad_coin_type">The private key type does not match the destination account type.</string>
+    <string name="sweep_wallet_bad_password">Incorrect password.</string>
+    <string name="sweep_wallet_zero_coins">The private key does not contain any funds.</string>
+    <string name="sweep_wallet_key_wait">Please wait while sweeping your paper wallet</string>
+    <!-- &#8230; is the ... character -->
+    <string name="sweep_wallet_key_decoding">Decoding private key&#8230;</string>
+    <!-- &#8230; is the ... character -->
+    <string name="sweep_wallet_key_loading">Loading balance&#8230;</string>
+    <!-- &#8230; is the ... character -->
+    <string name="sweep_wallet_key_signing">Creating transaction&#8230;</string>
+    <!-- Fees settings -->
+    <string name="title_activity_transaction_fees">Transaction fees</string>
+    <!-- Example: Bitcoin transaction fees-->
+    <string name="tx_fees_title">%1$s transaction fees</string>
+    <!-- Example: The fee value is per kilobyte.-->
+    <string name="tx_fees_description">The fee value is %1$s.</string>
+    <string name="tx_fees_per_kilobyte">per kilobyte of transaction data</string>
+    <string name="tx_fees_per_byte">per byte of transaction data</string>
+    <string name="tx_fees_per_transaction">per transaction</string>
+
+    <!-- Terms -->
+    <string name="terms_of_service_title">Terms of service</string>
 </resources>
